@@ -28,7 +28,7 @@ h1 {
   user-select: none;
   animation: title-text .9s both 0.5s;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  font-size: 12vw;
+  font-size: 8vw;
 }
 
 h1:before {
@@ -37,7 +37,7 @@ h1:before {
   content: "";
   left: -5%;
   bottom: -20px;
-  height: 50px;
+  height: 30px;
   background: linear-gradient(to right, #7771bf,#d17e62);
   opacity: 0.3;
   animation: title-underline .5s both 1.7s;
