@@ -14,12 +14,13 @@ nav a {
   font-size: 20px;
   color: #333;
   font-family: 'Monoton';
-  transform: rotate(8deg);
+  transform: rotate(7deg);
   transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 nav a:hover {
   font-size: 30px;
+  color: #7771bf;
   transform: rotate(0deg);
 }
 
@@ -76,7 +77,7 @@ header {
 
 nav {
   display: flex;
-  width: 60vw;
+  width: 55vw;
   animation: step4 2s both 3s;
 }
 
@@ -97,7 +98,7 @@ nav ul li {
 @keyframes step1 {
   0% {
     opacity: 0;
-    transform: scale(0) rotate(-500deg);
+    transform: scale(0) rotate(-400deg);
   }
   100% {
     opacity: 1;
