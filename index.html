@@ -7,9 +7,25 @@
   <link rel="stylesheet" href="./assets/css/common.css">
 </head>
 <body>
+  <div id="particles-js"></div>
+
   <header>
-    <h1>issy_s16</h1>
-    <div id="particles-js"></div>
+    <div class="empty"></div>
+
+    <div class="logo">
+      <h1>issy_s16</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="">about</a></li>
+        <li><a href="">works</a></li>
+        <li><a href="">skill</a></li>
+        <li><a href="">blog</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+    <div class="empty"></div>
   </header>
 
   <main class="content">
@@ -21,17 +37,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
-    $(window).scroll(function (){
-      $(".animation").each(function(){
-        var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
-        var scroll = $(window).scrollTop(); //スクロールの位置を取得
-        var windowHeight = $(window).height(); //ウインドウの高さを取得
-        if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
-          $(this).addClass('active'); //クラス「active」を与える
-        }
-      });
-    });
-
     particlesJS.load('particles-js', 'assets/particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
