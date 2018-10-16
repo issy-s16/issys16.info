@@ -15,8 +15,9 @@ h1 {
   font-family: 'Monoton', sans-serif;
   color: #333;
   user-select: none;
-  animation: title-text 0.5s both 0.5s;
-  animation-timing-function: ease-in;
+  animation: title-text .9s both 0.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-size: 12vw;
 }
 
 h1:before {
@@ -28,8 +29,8 @@ h1:before {
   height: 50px;
   background: linear-gradient(to right, #7771bf,#d17e62);
   opacity: 0.3;
-  animation: title-underline 0.2s both 1.5s;
-  animation-timing-function: ease-in;
+  animation: title-underline .5s both 1.7s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 h2 {
@@ -46,13 +47,11 @@ h2 {
 @keyframes title-text {
   0% {
     opacity: 0;
-    transform: rotate(-280deg);
-    font-size: 0px;
+    transform: scale(0) rotate(-500deg);
   }
   100% {
     opacity: 1;
-    transform: rotate(5deg);
-    font-size: 12vw;
+    transform: scale(1) rotate(-2deg);
   }
 }
 
