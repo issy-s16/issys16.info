@@ -9,6 +9,7 @@
 <body>
   <header>
     <h1>issy_s16</h1>
+    <div id="particles-js"></div>
   </header>
 
   <main class="content">
@@ -18,6 +19,7 @@
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     $(window).scroll(function (){
       $(".animation").each(function(){
@@ -28,6 +30,10 @@
           $(this).addClass('active'); //クラス「active」を与える
         }
       });
+    });
+
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded');
     });
   </script>
 </body>
